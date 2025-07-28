@@ -43,3 +43,9 @@ Each component runs as a separate Docker container:
     3. postgres container - stores persistent user data.
 
     4. redis container - provides in-memory caching for faster retrieval.
+
+
+Register a user by sending a POST request to API 1 running on port 5000
+
+Run the command:
+    curl -X POST -H "Content-Type: application/json" http://<ip>:5000/register -d '{"name":"name","info":"info"}'
